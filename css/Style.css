@@ -34,13 +34,11 @@ nav a {
 }
 ul li {
     height: 40px;
-    width: 32%;
+    width: 157px;
     display: inline-block;
     border-top: 2px solid rgb(0, 0, 0);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 20px;
-
-    /* border-top: none; */
     text-align: center;
     background-color: coral;
     padding: 0px;
@@ -58,9 +56,9 @@ ol li {
     padding: 0px;
 }
 ol {
-    display: none;
+    display:none;
     margin-top: 20px;
-    width: 16.5%;
+    width: 11.5%;
 }
 
 li.hidden_menu{
@@ -89,11 +87,12 @@ h3 {
     margin-top: 0px;
 }
 
-ul,
-ol {
+ul
+ {width: 480px;
     padding: 0px;
-
     font-size: medium;
+}ol{
+    width: 160px;
 }
 
 p {
@@ -113,10 +112,11 @@ a {
     color: white;
     height: 100%;
     width: 100%;
-    /* font-style: italic; */
+    
 }
 ol.hidden_menu {
     position: absolute;
+    padding: 0px;
 }
 img {
     margin: 10px;
