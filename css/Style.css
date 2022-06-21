@@ -1,5 +1,6 @@
 body {
     background-color: aliceblue;
+    width: 100vw;
 }
 * {
     box-sizing: border-box;
@@ -17,7 +18,7 @@ footer {
 header {
     height: auto;
     min-height: 90px;
-    width: 100%;
+    /* width: 100vw; */
     background-color: coral;
 }
 
@@ -126,10 +127,12 @@ img {
 }
 div.left {
     width: 550px;
+    height: 100px;
+    float: left;
 }
-div.right {
+/* div.right {
     width: 50%;
-}
+} */
 ul li.menu:hover ol {
     display: block;
     
