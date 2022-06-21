@@ -130,9 +130,9 @@ div.left {
     height: 100px;
     float: left;
 }
-/* div.right {
+div.right {
     width: 50%;
-} */
+}
 ul li.menu:hover ol {
     display: block;
     
