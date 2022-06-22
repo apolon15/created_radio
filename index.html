@@ -7,26 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/Style_index.css">
+<style>
 
+    button{
+        position: relative;
+        width: 100px;
+        height: 60px;
+        border-radius: 40px;
+        font-weight: bolder;
+        background-color: rgb(80, 87, 94);
+        border-color: white;
+        color: white;
+        left: calc(50% - 50px);
+        bottom: 80px;
+    }
+</style>
 
 </head>
 
 <body>
+    <script>function refresh() {
+            if (confirm ('Людей со слабой психикой уберите от экрана!')) {location.href = './index_page1.html'} else { return false; }
+        }</script>
+    <form action=" " >
 
-    <form action="./index_page1.html">
-        <!-- confirm('Людей со слабой психикой уберите от экрана!')"> -->
-
-        <!-- ./index_page1.html"> -->
         <b><label>Логин</label></b><br>
         <p>Username</p>
         <span>⬇</span>
         <input type="text" class="login">
         <p>Password</p>
         <span>⬇</span>
-        <input type="text" class="pass">
-        <input type="submit" class="submit" onclick="confirm('Людей со слабой психикой уберите от экрана!')">
-
+        <input type="text" class="pass">        
     </form>
+    <button onclick="refresh()">Войти</button>
 
 
 </body>

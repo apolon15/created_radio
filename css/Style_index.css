@@ -1,6 +1,18 @@
 body {
     background-color: rgb(84, 90, 146);
 }
+button{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    border-radius: 40px;
+    font-weight: bolder;
+    background-color: rgb(80, 87, 94);
+    border-color: white;
+    color: white;
+    left: calc(50% - 50px);
+    bottom: 80px;
+}
 
 
 form {
