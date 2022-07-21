@@ -7,41 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/Style_index.css">
-<style>
+    <style>
 
-    button{
-        position: relative;
-        width: 100px;
-        height: 60px;
-        border-radius: 40px;
-        font-weight: bolder;
-        background-color: rgb(80, 87, 94);
-        border-color: white;
-        color: white;
-        left: calc(50% - 50px);
-        bottom: 80px;
-    }
-</style>
+
+    </style>
 
 </head>
 
 <body>
-    <script>function refresh() {
-            if (confirm ('Людей со слабой психикой уберите от экрана!')) {location.href = './index_page1.html'} else { return false; }
-        }</script>
-    <form action=" " >
-
+    <form action="./index_page1.html" onsubmit="return autoriz()">
         <b><label>Логин</label></b><br>
         <p>Username</p>
-        <span>⬇</span>
-        <input type="text" class="login">
-        <p>Password</p>
-        <span>⬇</span>
-        <input type="text" class="pass">        
+        <input type="text" class="login" placeholder="Ваш логин...(макс 8 символов)">
+        <p>Password</p> 
+        <input type="text" class="pass" placeholder="Должен включать спец.символы !@#$%^&*()">
+        <button>Войти</button>
     </form>
-    <button onclick="refresh()">Войти</button>
+    <br>
+    <form id="form2" onsubmit="sendMessage()">
+        <label>Обратная связь</label>
+        <p>Ваше имя</p>
+        <input type="text" class="userName" placeholder="Представьтесь">
+        <p>Ваш email</p>
+        <input type="text" class="email" placeholder="example@domen.com">
+        <div id="block_message">
+            <textarea id="comment" type="text" rows="12" cols="35" placeholder="Ваше сообщение не более 300 символов"
+                maxlength="300" oninput="maxValue()" ></textarea>
+        </div>
+        <button id="send">Отправить</button>
+    </form>
 
-
+    <script src="./Script/Script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 </html>
